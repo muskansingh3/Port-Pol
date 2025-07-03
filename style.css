@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #f8b500;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #030303;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #f8b500;
+    box-shadow: 0 4px 6px rgba(13, 66, 136, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .typed-text {
+    color: #f8b500;
+    font-size: 1.5rem;
+  }
+  
+  .cursor {
+    font-size: 1.5rem;
+    color: #333;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  /* Toggle Button Styling */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #f8b500;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background: linear-gradient(to right, #1e1e2f, #121212);
+    color: #f0f0f0;
+  }
+  
+  body.dark header,
+  body.dark footer {
+    background: #222;
+    color: #f8b500;
+  }
+  
+  body.dark .project-card {
+    background: #333;
+    color: #f0f0f0;
+    border-left: 5px solid #f8b500;
+  }
+  
+  body.dark nav a {
+    color: #f8b500;
+  }
+  
